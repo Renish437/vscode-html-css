@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+        }
+    
+    
+    
+    
+        /* if p is contained by any li which is contained by div then selector works */
+        
+        /* div li p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+
+    /* if p is right inside div then this selector will work */
+    
+    /* div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;} */
+   
+        /* if p is right after div that is p is the next sibling of div */
+        
+        /* div + p{
+        color: white;
+        background-color: red;
+    } */
+        
+    </style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li id="item"><p>This is another para inside li</p></li>
+                <li >This is para</li>
+            </ul>
+            <p style="background: blue;">This a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

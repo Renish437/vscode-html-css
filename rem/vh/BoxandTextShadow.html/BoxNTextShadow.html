@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text Shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        
+        background-color: bisque;
+        /* box-shadow: offset-x  offset-y  color;*/
+        /* box-shadow: offset-x  offset-y  blur-radius color;*/
+        /* box-shadow: offset-x  offset-y  blur-radius  spread-radius  color;*/
+
+        /* box-shadow: -5px -7px 13px 30px rgba(255,0,0,0.5); (here 0.5 is alpha which makes dark and ligt colors)*/
+        /* box-shadow: -10px -13px green; */
+
+        box-shadow:9px 5px red, 7px 7px green;
+        
+    }
+    .card h2{
+        /* text-shadow: offest-x  offset-y  blur-radius  color ; */
+        text-shadow: -4px -3px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>Java Course</h2>
+            <p> Welcome to java course by me. We will continue till end.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptate, repellat, assumenda rem optio aperiam excepturi eveniet dicta esse, repellendus nam quibusdam tempore. Voluptatem dicta quam corporis unde earum distinctio?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>HTML course</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptate, repellat, assumenda rem optio aperiam excepturi eveniet dicta esse, repellendus nam quibusdam tempore. Voluptatem dicta quam corporis unde earum distinctio?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>Card3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et voluptate, repellat, assumenda rem optio aperiam excepturi eveniet dicta esse, repellendus nam quibusdam tempore. Voluptatem dicta quam corporis unde earum distinctio?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

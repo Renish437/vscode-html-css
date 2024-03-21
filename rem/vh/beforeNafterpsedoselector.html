@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pesudoselectors</title>
+    <style>
+        body{
+            
+            color:white;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 1200px;
+            
+            background: url('https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg') no-repeat ; 
+            z-index: 1;
+            
+        }
+
+        header::before{
+            
+            content: "";
+            position: absolute;
+            opacity: 0.5;
+            
+            
+            
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 11px 105px;
+            text-align: center;
+            
+            height: 200px;
+            justify-content: center;
+        }
+        section::before{
+            content:"This is a content"
+        }
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 23px;
+        }
+        h3{
+            font-size: 38px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+       <ul class="navigation"> <li class="item">Home</li>
+        <li class="item">About us</li>
+        <li class="item">Contact</li>
+        <li class="item">Services</li></ul>
+    </nav>
+    </header>
+    <section>
+        <h3>This is coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus natus placeat animi saepe assumenda sequi nam, reiciendis pariatur exercitationem, non iusto obcaecati qui, dolore dolores amet veritatis voluptas? Sint.</p>
+        
+    </section>
+<hr>
+</body>
+</html>
